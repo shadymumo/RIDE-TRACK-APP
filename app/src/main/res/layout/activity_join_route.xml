@@ -21,7 +21,7 @@
     <com.goodiebag.pinview.pinview
         android:layout_width="wrap_content"
         android:layout_height="46dp"
-        android:layout_below="@id/textview3"
+        android:layout_below="@id/textView3"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
