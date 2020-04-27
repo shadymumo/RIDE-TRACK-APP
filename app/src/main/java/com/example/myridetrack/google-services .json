@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "698740003191",
+    "firebase_url": "https://matrack-70a7f.firebaseio.com",
+    "project_id": "matrack-70a7f",
+    "storage_bucket": "matrack-70a7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698740003191:android:8ab24e1847043dd1969172",
+        "android_client_info": {
+          "package_name": "com.example.myridetrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698740003191-ftdlvnfi9486akk4383jcol918b29q1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVLtTiLZwuj7cRlxq5yGu8qtPjQrWcIcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698740003191-ftdlvnfi9486akk4383jcol918b29q1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinRoute">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="395dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="24dp"
+        android:text="Enter code to join route" />
+
+    <com.goodiebag.pinview.pinview
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_below="@id/textview3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="92dp"
+
+
+        android:layout_marginEnd="6dp"
+        app:cursorVisible="true"
+        app:forceKeyboard="true"
+        app:inputType="number"
+        app:pinHeight="40dp"
+        app:pinLength="6"
+        app:pinWidth="35dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="116dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="262dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:onClick="submitButtonClick"
+
+        android:text="Submit" />
+</RelativeLayout>
