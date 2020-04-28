@@ -86,8 +86,10 @@ public class InviteCodeActivity extends AppCompatActivity {
 
                                                StorageReference sr = storageReference.child(user.getUid() + ".jpg" );
                                                sr.putFile(imageUri)
-                                                       .addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>()); {
-                                                public void onComplete(Task<UploadTask.TaskSnapshot> task)
+                                                       .addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>());
+                                               {
+
+                                                public void OnComplete(Task<UploadTask.TaskSnapshot> task)
                                                {
                         if(task.isSuccessful())
                         {
@@ -174,7 +176,7 @@ Toast.makeText(getApplicationContext(), "An error occured while creating account
             .addOnCompleteListener(new OnCompletelistener<Void>()
 
 
-                public void onComplete(Task <Void> task) {
+                public void onComplete(Task<Void>task) {
                 if(task.isSucessful())
                 {
                     Toast.makeText(getApplicationContext(), "email sent for verification",Toast.LENGTH_SHORT).show();

@@ -12,9 +12,9 @@ public class RouteJoin
  		this.circlememberid = circlememberid;
 
  	}
- 
 
-public  CircleJoin
+
+public  CircleJoin( )
 {
 
 }

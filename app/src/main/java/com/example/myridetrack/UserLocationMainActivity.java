@@ -97,7 +97,7 @@ public class UserLocationMainActivity extends AppCompatActivity
 
       t1_currentName = header.findViewById(R.id.title_text);
        t2_currentEmail = header.findViewById(R.id.email_text);
-       i1 = header.findViewById(R.id.ImageView);
+       i1 = header.findViewById(R.id.imageView);
 databaseReference = FirebaseDatabase.getInstance().getReference().child("Users");
 
 

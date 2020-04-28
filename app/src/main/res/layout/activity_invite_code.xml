@@ -47,5 +47,7 @@
         android:background="#ed6635"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+       android:onClick="registerUser"
+        />
 </RelativeLayout>

@@ -23,7 +23,9 @@
         android:layout_width="189dp"
         android:layout_height="48dp"
 
-        android:layout_weight="@drawable/red_offline" />
+        android:layout_weight="@drawable/red_offline"
+
+        />
 </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
