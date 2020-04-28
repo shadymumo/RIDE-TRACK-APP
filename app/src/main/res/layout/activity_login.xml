@@ -44,9 +44,11 @@
      android:layout_centerHorizontal="true"
      android:layout_marginBottom="184dp"
 
-     android:text="Login"
+     android:onClick="login"
      android:background="#ed6635"
      android:textColor="#FFFFFF"
      android:textSize="16sp"
-     android:textStyle="bold" />
-/>
+     android:textStyle="bold"
+    android:text="Login"/>
+
+</RelativeLayout>

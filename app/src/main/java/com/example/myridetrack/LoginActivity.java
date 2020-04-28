@@ -13,10 +13,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
-    FirebaseAuth Auth;
+    FirebaseAuth auth;
     EditText e1,e2;
 
     @Override
@@ -25,21 +26,21 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         e1 = (EditText)findViewById(R.id.editText);
         e2 = (EditText)findViewById(R.id.editText3);
-        Auth = FirebaseAuth.getInstance();
+       auth = FirebaseAuth.getInstance();
 
     }
     public void login(View V) {
-        Auth.signInWithEmailAndPassword(e1.getText().toString(),e2.getText().toString())
+      auth.signInWithEmailAndPassword(e1.getText().toString(),e2.getText().toString())
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
                             //Toast.makeText(getApplicationContext(),"user is logged in sucessfully",Toast.LENGTH_LONG ).show();
-                            FirebaseUser user = auth.getCurrentUser;
+                            FirebaseUser user = auth.getCurrentUser();
                             if(user.isEmailVerified())
                             {
 
-                                Intent Intent= new Intent(LoginActivity.this,MyNavigationActivity.class);
+                                Intent Intent= new Intent(LoginActivity.this,UserLocationMainActivity.class);
                                 startActivity(Intent);
                                 finish();
                             }
@@ -48,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
                             {
                                 Toast.makeText(getApplicationContext(),"email si not yet verified",Toast.LENGTH_LONG ).show();
                             }
-                        else
+
                         {
 
                             Toast.makeText(getApplicationContext(),"wrong password or email",Toast.LENGTH_LONG ).show();

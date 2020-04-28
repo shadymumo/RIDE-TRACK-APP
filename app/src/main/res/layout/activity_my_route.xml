@@ -7,9 +7,9 @@
     tools:context=".MyRouteActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:layout_width = "match_parent"
-        android:layout_height= "wrap_content"
-        android:id="@+/recyclerview"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
         tools:ignore="InvalidId" />
 
 
